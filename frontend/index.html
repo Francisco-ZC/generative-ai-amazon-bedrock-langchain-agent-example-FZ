@@ -98,6 +98,18 @@
 <!-- Paste your Kommunicate / Lex Web UI JavaScript plugin here --> 
 
 <!-- End of Lex Web UI IFrame Snippet--> 
-
+<script type="text/javascript">
+  (function(w, d, x, id){
+    s=d.createElement('script');
+    s.src='https://dend6g4sigg57.cloudfront.net/amazon-connect-chat-interface-client.js';
+    s.async=1;
+    s.id=id;
+    d.getElementsByTagName('head')[0].appendChild(s);
+    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+  })(window, document, 'amazon_connect', '22bd13ae-0199-40a5-b020-18b8b6a0bb9f');
+  amazon_connect('styles', { iconType: 'CHAT', openChat: { color: '#000000', backgroundColor: '#9ec9f5' }, closeChat: { color: '#000000', backgroundColor: '#7ca3cb'} });
+  amazon_connect('snippetId', 'QVFJREFIaUpYdjhaUmd2VmlOeXhuZFo4OWJTanhLR3pJYStHc1BvQms1ZnNIczNJNEFIMkpiR2ltZDUzeGVvR3VqditWSTVCQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNd2tmWlFQMmJQaE5UWHh3L0FnRVFnQ3UrQmRtME9WRlp1eFlOQjNjaEwyVFpwczRaRE5JOCtPZHdiWElLakhadU1OVEs5RGJwWnpRbGZ6VFk6OmNvdzBQalMvby9xQmlBbE9RcXdZZU05NzAwRjdmN2VLMHc3c09Uamh0TFpPblVZY2gyWmVGTFN5NlRXN283MXR2L0RaVnZjdDlkN0kxMVRrKzBqL1RpQ1UxMWRqQitJZElxd3JVWjkxSEpXcEZIeXhIOWZMYmlEZ2JUZjN0eGplZDhYdy9LTys5Z2psL3BWd0VvNlozTm1xODBVcjJUND0=');
+  amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
+</script>
 </body>
 </html>
